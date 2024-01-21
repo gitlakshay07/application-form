@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+</head>
+<body>
+    <div>
+        <h1>NATIONAL STUDENT APPLICATION FORM</h1>
+        <p>Please fill the form below correctly.</p>
+    </div>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Name</legend>
+            <table>
+                <tr>
+            <td><input type="text" name="first name" id="firstname" required autofocus tabindex="1"></td>
+            <td><input type="text" name="last name" id="lastname" required tabindex="2"></td>
+        </tr>
+        <tr>
+            <td><label for="firstname">First name</label></td>
+            <td><label for="lastname">Last name</label></td>
+            
+        </tr>
+        </table>
+        </fieldset>
+        <fieldset>
+            <legend><label for="dob">Date of birth</label></legend>
+            <input type="date" name="dob" id="dob" required tabindex="3">
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="male" >
+            <input type="radio" name="gender" id="male" tabindex="4">male
+        </label>
+
+        <label for="female">
+            <input type="radio" name="gender" id="female">female
+        </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="country">Country of birth:</label>
+            <select id="country" name="country" required tabindex="5">
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="United state">United state</option>
+                <option value="Iran">Iran</option>
+                <option value="Canada">Canada</option>
+
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend><label for="Natality">Natality</label></legend>
+            <input type="text" name="Natality" id="Natality" tabindex="6">
+        </fieldset>
+
+        <fieldset>
+            <legend><label for="lang">Language spoken at home</label></legend>
+            <input type="text" name="lang spoken" id="lang" tabindex="7">
+        </fieldset>
+
+        <div>
+            <h2>Permanent contact detail</h2>
+        </div>
+        <hr>
+
+        <fieldset>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="address1" id="address1" required tabindex="8">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address1">Street Address 1</label></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="address2" id="address2" tabindex="9">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address2">Street Address 2</label></td>
+                </tr>
+                              <!-- second table  -->
+                <tr>
+                    <td><input type="text" name="city" id="city" required tabindex="10"></td>
+                    <td><input type="text" name="state" id="state" required tabindex="11"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="city">City</label></td>
+                    <td><label for="state">State</label></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="zipcode" id="zipcode" tabindex="12"></td>
+                </tr>
+                <tr>
+                    <td><label for="zipcode">Postal/Zipcode</label></td>
+                </tr>
+            </table>
+
+            <div>
+                <span>Mailing Address:</span>
+                <p><label for="same">
+                    <input type="radio" name="male add" id="same" value="same" tabindex="13">Same as above
+                </label>
+                <label for="different">
+                    <input type="radio" name="male add" id="different" value="different">Add a different mailing address
+                </label></p>
+            </div>
+            <table>
+                <tr>
+                    <td><input type="tel" name="phone no." id="number1" tabindex="14"></td>
+                    <td><input type="tel" name="Mobile no." id="number2" required tabindex="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="number1">Phone</label></td>
+                    <td><label for="number2">Mobile</label></td>
+                </tr>
+                <tr>
+                    <td><input type="email" name="mail" id="email" placeholder="ex: myname@example.com" tabindex="16"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                </tr>
+            </table>
+
+            <div>
+                <p>Do you suffer from any medical condition/disablity that may affect our study?</p>
+                <label for="yes">
+                    <input type="radio" name="condition" id="yes" value="yess" tabindex="17">Yes
+                </label>
+                <label for="no">
+                    <input type="radio" name="condition" id="no" value="no">No
+                </label>
+            </div>
+
+            <div>
+                <p>If yes,please specify from the following</p>
+                <div>
+                    <label for="box1">
+                        <input type="checkbox" name="box1" id="box1" tabindex="18">Hearing
+                    </label>
+                </div>
+                <div>
+                    <label for="box2">
+                        <input type="checkbox" name="box2" id="box2">Learning
+                    </label>
+                </div>
+                <div>
+                    <label for="box3">
+                        <input type="checkbox" name="box3" id="box3">Mobality
+                    </label>
+                </div>
+                <div>
+                    <label for="box4">
+                        <input type="checkbox" name="box4" id="box4">Visual
+                    </label>
+                </div>
+                <div>
+                    <label for="box5">
+                        <input type="checkbox" name="box5" id="box5">Medical
+                    </label>
+                </div>
+                <div>
+                    <label for="box6">
+                        <input type="checkbox" name="box6" id="box6">other
+                    </label>
+                </div>
+                <div>
+                   <p>Other,Please specify</p>
+                    <textarea name="other" id="textarea1" cols="30" rows="3"></textarea>
+                </div>
+
+            </div>
+
+            
+            <div>
+                <p>How did you hear about us?</p>
+                <div>
+                    <label for="boxx1" tabindex="19">
+                    <input type="checkbox" name="box1" id="boxx1" value="Newsapaper">Newsapaper
+                    </label>
+                </div>
+                <div>
+                    <label for="boxx2">
+                    <input type="checkbox" name="box2" id="boxx2" value="Carrer advisor">Carrier advisor
+                    </label>
+                </div>
+                <div>
+                    <label for="boxx3">
+                    <input type="checkbox" name="box3" id="boxx3" value="Professional publication">Professional publication
+                </label>
+                </div>
+                <div>
+                    <label for="boxx4">
+                    <input type="checkbox" name="box4" id="boxx4" value="Billbord">Billbord
+                    </label>
+                </div>
+                <div>
+                    <label for="boxx5">
+                    <input type="checkbox" name="box5" id="boxx5" value="carrer and education expo">carrer and education expo
+                    </label>
+                </div>
+                <div>
+                    <label for="boxx6">
+                    <input type="checkbox" name="box6" id="boxx6" value="Website">Website
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+       <div>
+        <input type="submit" value="Submit">
+       </div>
+    </form>
+</body>
+</html>
